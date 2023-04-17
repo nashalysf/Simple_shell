@@ -27,8 +27,40 @@ ________________________________________________________________________________
 *
 *
 ## Requirements
-*
-*
+* Allowed editors: vi, vim, emacs
+* All your files will be compiled on Ubuntu 20.04 LTS using `gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89`
+* All your files should end with a new line
+* A `README.md` file, at the root of the folder of the project is mandatory
+* Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+* Your shell should not have any memory leaks
+* No more than 5 functions per file
+* All your header files should be include guarded
+* Use system calls only when you need to (why?)
+
+## Testing:
+* Shell should work like this in interactive mode:
+```
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+```
+* But also in non-interactive mode:
+```
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+```
 
 ## Learning Curve
 * While creating this app we learned and practice:
