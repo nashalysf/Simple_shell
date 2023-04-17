@@ -68,9 +68,7 @@ $
 2. SHELL basics.
 3. File Input and Outputs.
 4. Implement aux functions.
-5. Used `Routes` and `Route` components to set up client-side routing and used URL parameters in React Router for dynamic page content.
-6. Added variables to a useQuery Hook to run queries with arguments. 
-7. Implemented the functions and libaries to manage the app for both production and development environments.
+5. Implemented the functions and libaries to manage the app for both production and development environments.
 
 ## Questions?
 For any questions about this repo, please contact us at: </br>
