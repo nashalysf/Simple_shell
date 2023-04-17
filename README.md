@@ -3,7 +3,7 @@
 *  Simple shell project that simulates a simpler version of unix shell with built in commands.
   
   ## **Intro**: 
-### **What is Nadrian?**: 
+### **What is Nadrian?** 
 * Nadrian is a custom version of a unix terminal shell where the user can initialize on their computer and work through our command line interpreter version.
 	#### Function vs system call
   #### PATH
