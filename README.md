@@ -13,19 +13,15 @@
 
 ![Terminal - Concept](./client/src/images/png/logo-black.png)
 ![Program - Concept](./client/src/images/png/logo-white.png)
-- A command line for new users using CL tool.
+- A command line for new programmers using the CL tool.
 
-## Technologies:
+## Technologies and Usage:
 - [C](https://www.w3schools.com/c/c_intro.php)
 
-## Usage:
 1. To install this application, `git clone` this repo.
 2. Initialize the terminal by typing the command in the CL for an non interactive version or `init command` to start the shell in an interactive version.
 3. Type `exit`or `CTRL + D` to terminate the program.
 _____________________________________________________________________________________________
-## Tasks:
-*
-*
 ## Requirements
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using `gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89`
