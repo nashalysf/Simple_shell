@@ -1,13 +1,18 @@
 # Simple_shell
 ## Nadrian
-*  Simple shell project that simulates a simpler version of unix shell with built in commands.
-  
+* Simple shell project that simulates a simpler version of unix shell with built in commands.
+  ![Simple_shell(1)](https://user-images.githubusercontent.com/107204057/232614526-1f34d7ce-8899-48d5-a431-4ff1688686cb.jpg)
+
+
   ## **Intro**: 
-### **What is Nadrian?** 
+### **What is ***Nadrian***?** 
 * Nadrian is a custom version of a unix terminal shell where the user can initialize on their computer and work through our command line interpreter version.
-	#### Function vs system call
-  #### PATH
-  #### Exit
+#### Function vs system call
+- A function is a block of code that performs a specific task, while a system call is a request made by a program to the operating system with a specific permission. So a function call invokes the function, while a system call invokes an operating system request.
+#### PATH
+- `PATH` is an environment variable that instructs a system in which directories to search and run command or find executables through a specific path.
+#### Exit
+- `exit()` is a function that causes normal process termination and the least significant byte of status and 0377 is returned to the parent.
 
 ### **Visuals**: 
 
@@ -16,7 +21,7 @@
 - A command line for new programmers using the CL tool.
 
 ## Technologies and Usage:
-- [C](https://www.w3schools.com/c/c_intro.php)
+#### [C](https://www.w3schools.com/c/c_intro.php)
 
 1. To install this application, `git clone` this repo.
 2. Initialize the terminal by typing the command in the CL for an non interactive version or `init command` to start the shell in an interactive version.
@@ -59,7 +64,7 @@ $
 ```
 
 ## Learning Curve
-* While creating this app we learned and practice:
+### While creating this app we learned and practice:
 1. C language
 2. SHELL basics.
 3. File Input and Outputs.
