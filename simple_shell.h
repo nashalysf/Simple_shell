@@ -14,5 +14,6 @@
 int main(int ac __attribute__((unused)), char **av __attribute__((unused)));
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 /* PROTOTYPES */
+void _pwd(void);
 
 #endif

@@ -18,9 +18,9 @@ int main(int ac, char **argv)
 	size_t n = 0;
 
 /* prompt */
-	char *prompt = "Nadrian~$ ";
-
-	printf("%s", prompt);
+	char *prompt = "~$";
+	char *username = getlogin();
+	printf("%s%s",username, prompt);
 
 	(void)ac;
 	(void)argv;
