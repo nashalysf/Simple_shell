@@ -51,6 +51,7 @@ Exit the shell.
 \fB$ pwd\fR
 .TP
 /Users/user
-
+.SH BUGS
+No known bugs
 .SH AUTHOR
 Written by Nashalys Fernandez and Adrian Morales.
