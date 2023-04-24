@@ -1,0 +1,56 @@
+.TH NADRIAN 1 "2023-04-24" "1.0" "nadrian man page"
+
+.SH NADRIAN
+Nadrian - a simple command-line shell
+
+.SH SYNOPSIS
+#include "simple_shell.h"
+.TP
+\fB./hsh\fR
+
+.SH DESCRIPTION
+\fBNadrian\fR is a simple command-line shell that allows users to execute commands and interact with their system. It supports basic shell features such as input/output redirection, piping, and command chaining.
+
+.SH COMMANDS
+.TP
+\fBcd\fR [\fIDIRECTORY\fR]
+Change the current working directory to \fIDIRECTORY\fR. If \fIDIRECTORY\fR is not specified, change to the home directory.
+.TP
+\fBls\fR [\fIDIRECTORY\fR]
+List the contents of \fIDIRECTORY\fR. If \fIDIRECTORY\fR is not specified, list the contents of the current directory.
+.TP
+\fBecho\fR [\fISTRING\fR]
+Print \fISTRING\fR to the standard output.
+.TP
+\fBpwd\fR
+Print the current working directory.
+.TP
+\fBexit\fR
+Exit the shell.
+
+.SH EXAMPLES
+.TP
+\fB$ ls\fR
+.TP
+\fIfile1.txt\fR
+.TP
+\fIfile2.txt\fR
+.TP
+\fBdir1\fR
+.TP
+\fBdir2\fR
+.TP
+\fB$ cd dir1\fR
+.TP
+\fB$ pwd\fR
+.TP
+/Users/user/dir1
+.TP
+\fB$ cd ..\fR
+.TP
+\fB$ pwd\fR
+.TP
+/Users/user
+
+.SH AUTHOR
+Written by Nashalys Fernandez and Adrian Morales.
