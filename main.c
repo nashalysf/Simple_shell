@@ -39,7 +39,7 @@ int main(int ac, char **argv)
 
 	}
 
-	free(args);
+	free_array(args);
 	free(uinput);
 	return (0);
 }

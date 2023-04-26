@@ -49,10 +49,9 @@ char **tokenize(char *lineptr)
                 if (argv[i] == NULL)
                 {
                         perror("malloc error");
-                        for (i--; i >= 0; i--)
-                                free(argv[i]);
-                        free(argv);
-                        free(lineptr_c);
+                           for(i--; i >= 0; i--)
+				   free(argv[i]);
+			   free(lineptr_c);
                         return (NULL);
                 }
                 strcpy(argv[i], token);
