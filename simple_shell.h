@@ -11,6 +11,7 @@
 #include <sys/types.h>
 #include <dirent.h>
 #include <signal.h>
+#include <sys/wait.h>
 /* -----------------PROTOTYPES-------------- */
 
 /* ac __attribute__((unused)) -
@@ -25,7 +26,10 @@ char *strtok(char *str, const char *delim);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 void _pwd(void);
-
+int execute(char **args);
+char *read_input(void);
 void _ls(void);
+
+char **tokenize(char *lineptr);
 
 #endif
