@@ -2,9 +2,15 @@
 ## Nadrian
 * Simple shell project that simulates a simpler version of unix shell with built in commands.
   ![Simple_shell(1)](https://user-images.githubusercontent.com/107204057/232614526-1f34d7ce-8899-48d5-a431-4ff1688686cb.jpg)
-
-
-  ## **Intro**: 
+# Table of Contents
+* [Intro](#Intro)
+* [Tech & Usage](#Technologies)
+* [Requirements](#Requirements)
+* [Testing](#Testing)
+* [Learning Curve](#Learning)
+* [Contact-Information](#Questions)
+_____________________________________________________________________________________________
+  # **Intro**: 
 ### **What is ***Nadrian***?** 
 * Nadrian is a custom version of a unix terminal shell where the user can initialize on their computer and work through our command line interpreter version.
 #### Function vs system call
@@ -27,7 +33,7 @@
 2. Initialize the terminal by typing the command in the CL for an non interactive version or `init command` to start the shell in an interactive version.
 3. Type `exit`or `CTRL + D` to terminate the program.
 _____________________________________________________________________________________________
-## Requirements
+# Requirements
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using `gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89`
 * All your files should end with a new line
@@ -38,7 +44,7 @@ ________________________________________________________________________________
 * All your header files should be include guarded
 * Use system calls only when you need to (why?)
 
-## Testing:
+# Testing:
 * Shell should work like this in interactive mode:
 ```
 $ ./hsh
@@ -63,8 +69,8 @@ hsh main.c shell.c test_ls_2
 $
 ```
 
-## Learning Curve
-### While creating this app we learned and practice:
+# Learning Curve
+### While creating this project we learned and practiced:
 1. C language
 2. SHELL basics.
 3. File Input and Outputs.
