@@ -29,6 +29,7 @@ void _pwd(void);
 int execute(char **args);
 char *read_input(void);
 void _ls(void);
+void free_array(char **args);
 
 char **tokenize(char *lineptr);
 
