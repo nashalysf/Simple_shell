@@ -27,6 +27,11 @@ int main(int ac, char **argv)
 			break;
 		}
 		args = tokenize(uinput);
+		if (strcmp(args[0], "exit") == 0)
+		{
+			printf("\n Exiting Nadrian...Bye bye \n");
+				break;
+		}
 		exstatus = execute (args);
 
 		if (exstatus == -1)
