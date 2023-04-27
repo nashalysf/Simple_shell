@@ -30,6 +30,9 @@ int execute(char **args);
 char *read_input(void);
 void _ls(void);
 void free_array(char **args);
+#define TOK_BUFSIZE 64
+#define TOK_DELIM " \t\r\n\a"
+
 
 char **tokenize(char *lineptr);
 

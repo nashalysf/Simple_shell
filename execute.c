@@ -8,8 +8,8 @@
  */
 int execute(char **args)
 {
-	pid_t pid = fork();
-	int status;
+    pid_t pid = fork();
+    int status;
 
     if (pid < 0) {
         perror("fork");
@@ -17,6 +17,13 @@ int execute(char **args)
     }
 
     if (pid == 0) {
+        int i = 0;
+        while (args[i] != NULL) {
+            i++;
+        }
+        if (i > 0 && args[i-1][0] == '\0') {
+            args[i-1] = NULL;
+        }
         execvp(args[0], args);
         perror(args[0]);
         exit(EXIT_FAILURE);
@@ -29,3 +36,4 @@ int execute(char **args)
 
     return (0);
 }
+

@@ -2,15 +2,18 @@
 /**
  * args- arguments to free
  */
-void free_array(char **args)
+void free_array(char **arr)
 {
-	int c = 0;
+    int i;
 
-	while (args[c])
-	{
-		free(args[c]);
-		c++;
-	}
-	free(args);
+    if (arr == NULL)
+        return;
+
+    for (i = 0; arr[i] != NULL; i++)
+    {
+        free(arr[i]);
+    }
+
+    free(arr);
 }
 
