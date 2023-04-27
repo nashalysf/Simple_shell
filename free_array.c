@@ -13,4 +13,3 @@ void free_array(char **args)
 	}
 	free(args);
 }
-

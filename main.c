@@ -24,6 +24,7 @@ int main(int ac, char **argv)
 		if (uinput == NULL)
 		{
 			printf("\n");
+			free(uinput);
 			break;
 		}
 		args = tokenize(uinput);
