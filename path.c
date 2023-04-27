@@ -15,7 +15,7 @@ int forks(char *find, char **argv, size_t *counter)
 		return (0);
 	counter++;
 	if (pid_child == 0)
-		execute(find, argv, envar);
+		execute(argv);
 	if (strcmp(argv[0], find) != 0)
 		free(find);
 	free(argv);

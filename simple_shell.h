@@ -14,10 +14,6 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 /* -----------------PROTOTYPES-------------- */
-/*
- * ac __attribute__((unused))
- * tells arg count while preventing warnings if unused
- */
 int main(int ac __attribute__((unused)), char **av __attribute__((unused)));
 /*
  * str - string to tokenize
