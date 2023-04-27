@@ -12,13 +12,15 @@
 #include <dirent.h>
 #include <signal.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 /* -----------------PROTOTYPES-------------- */
-
-/* ac __attribute__((unused)) -
- * tells arg count while preventing warnings if unused 
+/*
+ * ac __attribute__((unused))
+ * tells arg count while preventing warnings if unused
  */
 int main(int ac __attribute__((unused)), char **av __attribute__((unused)));
-/* str - string to tokenize
+/*
+ * str - string to tokenize
  * delim - guide to break the string
  */
 char *strtok(char *str, const char *delim);
@@ -30,7 +32,14 @@ int execute(char **args);
 char *read_input(void);
 void _ls(void);
 void free_array(char **args);
+#define TOK_BUFSIZE 64
+#define TOK_DELIM " \t\r\n\a"
+
 
 char **tokenize(char *lineptr);
+int forks(char *find, char **argv, size_t *counter);
+int path(const char *file_name, DIR *dir);
 
+/***enviroment var***/
+extern char **envar;
 #endif

@@ -1,7 +1,6 @@
 #include "simple_shell.h"
 /**
- * read_input- read a line from stdin
- *
+ * read_input - read a line from stdin
  * Return: pointer to the line
  */
 char *read_input(void)
@@ -17,6 +16,5 @@ char *read_input(void)
 		free(uinput);
 		return (NULL);
 	}
-
 	return (uinput);
 }
