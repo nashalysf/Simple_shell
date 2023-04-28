@@ -3,49 +3,37 @@
  * main - gets user input and calls
  * function(s) to preform command
  * @ac: argument count
- * @argv: argument vector (array)
+ * @av: argument vector (array)
  * Return: 0. for success
  */
-int main(int ac, char **argv)
+int main(int ac, char **av)
 {
-	char **args = NULL;
-	char *prompt = "~$";
-	char *username = getlogin();
-	char *uinput = NULL;
-	int exstatus; /* variable to hold execution status */
+	char *line;
+	char **args;
+	int status;
+	bool running = true;
+
 	(void)ac;
-	(void)argv;
+	(void)av;
 
-	/*prompt loop*/
-	while (1)
+	while (running)
 	{
-	printf("%s%s", username, prompt);
-	uinput = read_input();
-	if (uinput == NULL)
-	{
-		printf("\n");
-		break;
-	}
-	args = tokenize(uinput);
-	if (strcmp(args[0], "exit") == 0)
-	{
-	printf("\n Exiting Nadrian...Bye bye \n");
-	free_array(args);
-	free(uinput);
-		return (0);
-	}
-	exstatus = execute(args);
-	if (exstatus == -1)
-	{
-		break;
-	}
-	free_array(args);
-	free(uinput);
-	args = NULL;
-	uinput = NULL;
-	}
+		prompt();
+		line = read_input();
 
-	free_array(args);
-	free(uinput);
+		if (line == NULL)
+			break;
+
+		args = tokenize(line);
+		status = execute(args);
+		free(line);
+		free_array(args);
+
+		if (status == -1)
+		{
+			running = false;
+		}
+	}
 	return (0);
+
 }
