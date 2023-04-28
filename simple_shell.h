@@ -13,6 +13,7 @@
 #include <signal.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <stdbool.h>
 /* -----------------PROTOTYPES-------------- */
 int main(int ac __attribute__((unused)), char **av __attribute__((unused)));
 /*
@@ -28,6 +29,7 @@ int execute(char **args);
 char *read_input(void);
 void _ls(void);
 void free_array(char **args);
+void prompt(void);
 #define TOK_BUFSIZE 64
 #define TOK_DELIM " \t\r\n\a"
 
