@@ -6,37 +6,34 @@
  */
 int execute(char **args)
 {
-	pid_t pid;/*process ID*/
-	int status;/*process status*/
+	pid_t pid;
+	int status;
 
 	if (args[0] == NULL)
 		return (1);
 
-	/*if the first argument is "exit" return -1 end exit the shell*/
 	if (strcmp(args[0], "exit") == 0)
 		return	(-1);
 
-	pid = fork();/*create a new process*/
-	if (pid == -1)/*check for errors in creating new process*/
+	pid = fork();
+	if (pid == -1)
 	{
 		perror("Fork error");
 		return (-1);
 	}
-	if (pid == 0)/*if in the child process*/
+	if (pid == 0)
 	{
-		if (execvp(args[0], args) == -1)/*execute the command*/
+		if (execvp(args[0], args) == -1)
 		{
-			/*print error message if command not found*/
 			printf("%s:command not found\n", args[0]);
-			exit(EXIT_FAILURE);/*exit child process if command execution fails*/
+			exit(EXIT_FAILURE);
 		}
 	}
-	else/*if in the parent process*/
+	else
 	{
 		do {
-			waitpid(pid, &status, WUNTRACED);/*wait for child process to finish*/
-			/*check for process status*/
+			waitpid(pid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
-	return (0);/*return success*/
+	return (0);
 }
